@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+        /* Стили для переиспользования */
+
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+        /* Стилизация Header */
+
+
+.container {
+    width: 100%;
+    height: 800px;
+    background: url(../img/Layer\ 15-min.png) no-repeat;
+    background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .container {
+        background: url(../img/picture@2x-min.png) no-repeat;
+        background-size: cover;
+    }
+}
+
+.wrapper {
+    max-width: 1202px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+}
+
+.wrapper__logo {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper__logo--color {
+    color: #ffffff;
+}
+
+.spisok {
+    width: 614px;
+    display: flex;
+    justify-content: space-between
+}
