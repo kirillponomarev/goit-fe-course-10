@@ -7,21 +7,39 @@
     <link rel="stylesheet" href="./CSS/normalize.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <title>Homework #10</title>
 </head>
 <body>
     <header class="container">
         <div class="wrapper">
-            <a href="#" class="wrapper__logo wrapper__logo--color link">MoGo</a>
-            <ul class="spisok list">
-                <li class="spisok__item">ABOUT</li>
-                <li class="spisok__item">SERVICE</li>
-                <li class="spisok__item">WORK</li>
-                <li class="spisok__item">BLOG</li>
-                <li class="spisok__item">CONTACT</li>
-                <li class="spisok__item"></li>
-                <li class="spisok__item"></li>
-            </ul>
+            <nav class="navigation">
+                <a href="#" class="navigation__logo link">MoGo</a>
+                <ul class="spisok list">
+                    <li class="spisok__item spisok__item--hover"><a class="spisok__lnk link" href="#">ABOUT</a></li>
+                    <li class="spisok__item spisok__item--hover"><a class="spisok__lnk link" href="#">SERVICE</a></li>
+                    <li class="spisok__item spisok__item--hover"><a class="spisok__lnk link" href="#">WORK</a></li>
+                    <li class="spisok__item spisok__item--hover"><a class="spisok__lnk link" href="#">BLOG</a></li>
+                    <li class="spisok__item spisok__item--hover"><a class="spisok__lnk link" href="#">CONTACT</a></li>
+                    <li class="spisok__item spisok__item--hover">
+                        <a class="spisok__lnk link" href="#">
+                            <svg class="svg-image">
+                                <use href="./img/SVG/symbol-defs.svg#icon-SHOPPING-CART"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="spisok__item spisok__item--hover">
+                        <a class="spisok__lnk link" href="#">
+                            <svg class="svg-image">
+                                <use href="./img/SVG/symbol-defs.svg#icon-111"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="wrapper__article">Creative Template</h1>
+            <h2 class="wrapper__headline">WELCOME TO MOGO</h2>
+            <button class="wrapper__btn">LEARN MORE</button>
         </div>
     </header>
 </body>

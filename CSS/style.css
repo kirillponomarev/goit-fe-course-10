@@ -13,6 +13,7 @@
 
 .link {
     text-decoration: none;
+    color: #ffffff;
 }
 
         /* Стилизация Header */
@@ -20,39 +21,99 @@
 
 .container {
     width: 100%;
-    height: 800px;
+    height: auto;
     background: url(../img/Layer\ 15-min.png) no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .container {
         background: url(../img/picture@2x-min.png) no-repeat;
         background-size: cover;
+        background-position: center;
     }
 }
 
 .wrapper {
     max-width: 1202px;
     margin: auto;
+    padding-top: 28px;
+    padding-bottom: 230px;
+}
+
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 28px;
+    margin-bottom: 140px;
 }
 
-.wrapper__logo {
+.navigation__logo {
     font-size: 30px;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-}
-
-.wrapper__logo--color {
-    color: #ffffff;
 }
 
 .spisok {
     width: 614px;
     display: flex;
     justify-content: space-between
+}
+
+.spisok__item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.spisok__item--hover:hover .spisok__lnk {
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a; 
+}
+
+.spisok__lnk {
+    padding: 10px 0;
+}
+
+.svg-image {
+    width: 20px;
+    height: 20px;
+}
+
+.spisok__item--hover:hover .svg-image {
+    fill: #fce38a;
+}
+
+.wrapper__article {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 72px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.wrapper__headline {
+    width: 820px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 150px;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 100px;
+}
+
+.wrapper__btn {
+    display: block;
+    margin: auto;
+    width: 154px;
+    height: 34px;
+    border: 3px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
 }
