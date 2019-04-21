@@ -4,20 +4,30 @@
     box-sizing: border-box;
 }
 
-        /* Стили для переиспользования */
 
-
-.list {
-    list-style-type: none;
-}
+        /* Общие классы  */
 
 .link {
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
     color: #ffffff;
 }
 
-        /* Стилизация Header */
+.list-stl {
+    list-style: none;
+}
 
+.main-text {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #999999;
+}
+
+
+        /* Оформление background у header */
 
 .container {
     width: 100%;
@@ -25,9 +35,11 @@
     background: url(../img/Layer\ 15-min.png) no-repeat;
     background-size: cover;
     background-position: center;
+    margin-bottom: 45px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) {
     .container {
         background: url(../img/picture@2x-min.png) no-repeat;
         background-size: cover;
@@ -35,85 +47,171 @@
     }
 }
 
-.wrapper {
-    max-width: 1202px;
+
+        /* Оформление wrap и его элементов */
+
+.wrap {
+    width: 1202px;
     margin: auto;
-    padding-top: 28px;
-    padding-bottom: 230px;
+}
+
+.page-navigation {
+    padding-top: 25px;
+    margin-bottom: 130px;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 140px;
 }
 
 .navigation__logo {
     font-size: 30px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
 }
 
-.spisok {
-    width: 614px;
+.list {
+    width: 622px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
-.spisok__item {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+.list__link {
+    padding-bottom: 10px;
 }
 
-.spisok__item--hover:hover .spisok__lnk {
+.list__item--hover:hover .list__link {
     color: #fce38a;
-    border-bottom: 3px solid #fce38a; 
+    border-bottom: 3px solid #fce38a;
+    transition: 150ms all linear;
 }
 
-.spisok__lnk {
-    padding: 10px 0;
-}
-
-.svg-image {
+.list__svg {
+    fill: #fce38a;
     width: 20px;
     height: 20px;
 }
 
-.spisok__item--hover:hover .svg-image {
-    fill: #fce38a;
-}
-
-.wrapper__article {
+.general-headline {
+    font-size: 72px;
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
-    font-size: 72px;
     color: #ffffff;
     text-align: center;
 }
 
-.wrapper__headline {
-    width: 820px;
+.page-headline {
+    width: 821px;
     margin: auto;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 150px;
-    color: #ffffff;
-    line-height: 1;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
 }
 
-.wrapper__btn {
+.page-hdln {
+    margin-bottom: 30px;
+}
+
+.headline-two {
+    font-size: 150px;
+    line-height: 1;
+    text-align: center;
+}
+
+.page-btn {
+    padding-bottom: 230px;
+}
+
+.button {
     display: block;
     margin: auto;
     width: 154px;
-    height: 34px;
+    height: 32px;
     border: 3px solid #ffffff;
     background: transparent;
-    color: #ffffff;
+    font-size: 14px;
+}
+
+
+
+        /* Стилизация main */
+
+
+.box-headline {
+    margin-bottom: 18px;
+}
+
+.heading {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+.box-caption {
+    margin-bottom: 38px;
+}
+
+.caption {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.page-line {
+    margin-bottom: 65px;
+}
+
+.line {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
+
+
+        /* Позиционирование и стилизация Amazing services */
+
+
+
+
+
+.page-services {
+    margin-bottom: 95px;
+}
+
+.block-services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-services {
+    width: 380px;
+}
+
+.box-services__headline {
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+
+
+            /* Стилизация Meet Our Team */
+
+
+
+.page-text {
+    width: 980px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.meet-our-team {
+    display: flex;
+    justify-content: space-between;
 }
